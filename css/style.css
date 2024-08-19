@@ -1,0 +1,71 @@
+/*zerando os paramertros*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*declaração de fontes*/
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*declaração de cores*/
+
+:root {
+    --background-color1: #FFFFFF;
+    --background-color2: #303030;
+    --background-color3:  #000000;
+    --background-color4: #F9F9F9;
+    --background-color5: #C07212;
+    --main-color1: #000000;
+    --main-color2: #FFFFFF;    
+}
+
+body {
+    width: 1440px;
+    height: 2116px;
+    top: -512px;
+    left: 656px;
+    background-color: var(--background-color1);
+    
+}
+
+/*início do header*/
+
+.section-header {
+    width: 1440px;
+    height: 475px;
+    background-color: var(--background-color2);
+    margin-left: 15%;
+
+    
+}
+
+#text-title {
+    font-family: inter;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -2,5%;
+    color: var(--main-color2);
+    width: 1024px;
+    height: 72px;
+    top: 206px;
+    left: 62px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+
+
