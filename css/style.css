@@ -1,16 +1,13 @@
-/*zerando os paramertros*/
+/*declarações globais.*/
 
 * {
     margin: 0;
     padding: 0;
 }
 
-/*declaração de fontes*/
-
 .inter {
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
+    font-optical-sizing: auto;    
     font-style: normal;
 }
 
@@ -33,39 +30,209 @@
     --main-color2: #FFFFFF;    
 }
 
-body {
-    width: 1440px;
-    height: 2116px;
-    top: -512px;
-    left: 656px;
-    background-color: var(--background-color1);
-    
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;    
+}
+
+@media (max-width: 1920px){
+    .container {
+        width: 1440px;
+    }
+}
+
+@media (max-width: 992px){
+    .container {
+        width: 960px;
+        max-width: 100%;
+    }
 }
 
 /*início do header*/
 
 .section-header {
-    width: 1440px;
+    max-width: 1440px;
     height: 475px;
-    background-color: var(--background-color2);
-    margin-left: 15%;
-
-    
+    background-color: var(--background-color2);    
 }
 
 #text-title {
     font-family: inter;
-    font-size: 60px;
-    line-height: 72px;
-    letter-spacing: -2,5%;
-    color: var(--main-color2);
-    width: 1024px;
-    height: 72px;
-    top: 206px;
-    left: 62px;
-    gap: 0px;
-    opacity: 0px;
+    font-size: 62px;    
+    color: var(--main-color2);    
+    padding: 206px 0 0 62px;
+    font-weight: 600;    
 }
+
+h4 {
+    font-family: inter;
+    font-size: 20px;    
+    color: var(--main-color2);    
+    padding: 28px 0 0 62px;
+    font-weight: 500;
+    
+}
+
+/*fim do header*/
+
+/*início do main - section-main*/
+
+.section-main {
+    max-width: 1440px;
+    height: 1003px;
+
+    .info-number {
+        background-color: var(--background-color4);
+        height: 229px;
+    }
+    
+    .history {
+        background-color: none;
+        height: 774px;        
+    }
+}
+
+.info-number {
+    display: flex;
+    flex-direction: row;    
+    width: 100%;
+    gap: 250px;    
+}
+
+span {
+    font-size: 40px;
+    font-family: inter;
+    font-weight: 600;
+    line-height: 28px;
+    padding-top: 100px;
+    margin-left: 124px;    
+}
+
+#info-text {
+    display: flex;
+    position: relative;
+    flex-direction: row;    
+    width: 100%;
+    margin-left: 127px;    
+    gap: 156px;   
+    margin-top: -90px;
+    margin-bottom: 285px;
+}
+
+p {
+    font-size: 20px;
+    font-family: inter;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+h2 {
+    width: 735px;    
+    font: raleway;
+    font-size: 40px;
+    color: #000000;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 230px;    
+    padding-left: 77px;
+    padding-top: 40px;
+}
+
+h3 {
+    width: 625px;    
+    font: raleway;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;    
+    padding-left: 77px;      
+    padding-top: 40px;
+}
+
+img {
+    width: 510px;
+    height: 605px;
+    margin-top: -400px;
+    margin-left: 876px;
+    border-radius: 30px;    
+}
+
+/*fim do main*/
+
+/*início do footer form*/
+
+.section-form {
+    width: 1440px;
+    height: 638px;    
+    background-color: var(--background-color2);
+}
+
+#title-form {
+    padding-top: 80px;
+    font-family: inter;
+    line-height: 48px;
+    letter-spacing: px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;    
+    color: var(--main-color2);
+}
+
+input {
+    width: 508px;
+    height: 72px;
+    padding-left: 30px;
+    font-size: 26px;
+    margin-top: 60px;
+    margin-left: 466px;
+    border-radius: 10px;
+    background-color: var(--background-color4);
+}
+
+::-webkit-input-placeholder{
+    font-size: 24px;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--main-color1);
+    opacity: calc(30%);
+    padding-left: 30px;
+    transition: 0.6s;
+}
+
+placeholder:hover{
+    width: 18px;
+}
+
+
+button {
+    background-color: var(--background-color5);
+    color: var(--main-color2);
+    width: 286px;
+    height: 74px;
+    font-size: 30px;
+    font-family: Raleway;
+    font-weight: 700;
+    border-radius: 10px;
+    border-color: none;
+    border-style: hidden;
+    margin-top: 105px;
+    margin-left: 577px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 6px 7px var(--background-color4);
+    transition-duration: 0.5s;
+}
+
+/*fim do footer form*/
+
 
 
 
